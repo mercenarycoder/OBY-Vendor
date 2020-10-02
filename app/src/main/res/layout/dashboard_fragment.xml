@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="5dp"
+    android:paddingLeft="5dp"
+    >
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="New"
+    android:textColor="#000"
+    android:textSize="24sp"
+    android:padding="0dp"
+    />
+<TableRow android:layout_height="2dp"
+    android:layout_width="match_parent"
+    android:background="#4B4A4A"
+    />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="No Appointments right now"
+          android:textSize="22sp"
+          android:layout_centerInParent="true"
+          android:textStyle="bold"
+          android:enabled="false"
+          android:visibility="invisible"
+          android:gravity="center"
+          android:id="@+id/showwhen_no_appointment"
+          />
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:layout_width="wrap_content"
+    android:id="@+id/swipe_to_get_appointment"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="120dp">
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="120dp"
+    android:id="@+id/recycler"
+    />
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+       >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="More Appointments....."
+        android:gravity="center|right"
+        android:textColor="#99132ACE"
+        android:layout_gravity="center"
+        android:textSize="17sp"
+        android:id="@+id/view_more"
+        android:padding="5dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quick menu"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:padding="5dp"
+        />
+    <TableRow android:layout_height="2dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="#BE1E2D"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:src="@drawable/offer_dashboard_final"
+            android:id="@+id/services_dash"/>
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:src="@drawable/mid_dashboard_final"
+            android:id="@+id/appointment_dash"/>
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:src="@drawable/last_dashboard_final"
+            android:id="@+id/head_dash"/>
+    </LinearLayout>
+</LinearLayout>
+  </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:gravity="center"
+    android:layout_marginBottom="70dp"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="340dp"
+    android:layout_height="250dp"
+    android:background="@drawable/support_edittext"
+    android:orientation="vertical"
+    >
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Support Contact "
+    android:textSize="18sp"
+    android:paddingTop="4dp"
+    android:gravity="center"/>
+<LinearLayout
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:baselineAligned="false"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mobile No.:"
+        android:textSize="16sp"
+        android:paddingTop="0dp"
+        android:paddingRight="2dp"
+        android:layout_weight="1.4"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="7389438159"
+        android:textSize="14sp"
+        android:id="@+id/support_mobile123"
+        android:layout_weight="1"
+        android:paddingTop="0dp"
+        android:gravity="center"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email ID:"
+            android:textSize="16sp"
+            android:paddingTop="0dp"
+            android:paddingRight="2dp"
+            android:layout_weight="1.8"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="manjeetts869@gmail.com"
+            android:textSize="14sp"
+            android:id="@+id/support_email123"
+            android:layout_weight="1"
+            android:paddingTop="0dp"
+            android:gravity="center"/>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>

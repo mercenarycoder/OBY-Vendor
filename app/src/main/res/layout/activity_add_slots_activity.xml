@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/toolbar_order_view"
+        android:background="#fff"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:background="#ffc533"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:layout_marginRight="0dp">
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_weight="4.9"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_button"
+                android:id="@+id/back_done_right"
+                android:background="#ffc533"
+                />
+            <TextView
+                android:id="@+id/order_details"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Update Slot"
+                android:layout_marginRight="20dp"
+                android:textColor="#0C0A0A"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:orientation="vertical"
+
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingTop="20dp"
+    tools:context=".add_slots_activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/support_edittext"
+        >
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/days_select_here"/>
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:height="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/support_edittext"
+        android:hint="Max Appointments(Number only)"
+        android:id="@+id/max_apps_in_slot"
+        android:textColorHint="#7C7979"
+        android:textSize="16sp"
+        android:inputType="number"
+
+        android:paddingStart="15dp"
+        android:gravity="left|center"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:height="0dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/support_edittext"
+        android:hint="Start Time"
+        android:id="@+id/start_time_dalo"
+        android:textColorHint="#7C7979"
+        android:textSize="16sp"
+
+
+        android:paddingStart="15dp"
+        android:gravity="left|center"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:height="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/support_edittext"
+        android:hint="End Time"
+        android:id="@+id/end_time_dalo"
+        android:textColorHint="#7C7979"
+        android:textSize="16sp"
+        android:paddingStart="15dp"
+        android:gravity="left|center"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="13dp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/support_edittext"
+        >
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:id="@+id/spinner_state2"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:id="@+id/save_slots_final"
+        android:background="@drawable/btn_round2"
+        android:text="Update"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        />
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#fff"
+    tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="0dp"
+    android:layout_alignParentBottom="false">
+<ImageView
+    android:layout_width="125dp"
+    android:layout_height="200dp"
+    android:src="@drawable/vendorlogo"
+    android:layout_gravity="center"
+    ></ImageView>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Vendor login"
+    android:textColor="#000"
+    android:textSize="20sp"
+    ></TextView>
+<EditText
+    android:layout_width="260dp"
+    android:layout_height="50dp"
+    android:hint="Email"
+    android:id="@+id/email"
+    android:gravity="center"
+    android:textSize="20sp"
+    android:background="@drawable/edittext_login"
+    android:inputType="textEmailAddress"
+    android:layout_marginTop="15dp"
+    android:textColor="#000"
+    />
+    <EditText
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:hint="Password"
+        android:id="@+id/password"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:background="@drawable/edittext_login"
+        android:inputType="textPassword"
+        android:layout_marginTop="15dp"
+        android:textColor="#000"
+        />
+
+  <Button
+      android:layout_width="150dp"
+      android:layout_height="50dp"
+      android:id="@+id/login23"
+      android:background="@drawable/btn_round"
+      android:text="Login"
+      android:textColor="#fff"
+      android:textSize="19sp"
+      android:layout_marginTop="15dp"
+      android:textStyle="bold"
+      />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#747474"
+        android:layout_marginTop="5dp"
+        android:textSize="14sp"
+        ></TextView>
+    <Button
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:id="@+id/sign_up"
+        android:background="@drawable/btn_sign_up"
+        android:text="SignUp as Vendor"
+        android:textColor="#fff"
+        android:textSize="19sp"
+        android:layout_marginTop="5dp"
+        android:textStyle=""
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="www.blossomyou.in"
+        android:textColor="#504F4F"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="0dp"
+        ></TextView>
+
+</LinearLayout>
+
+</RelativeLayout>

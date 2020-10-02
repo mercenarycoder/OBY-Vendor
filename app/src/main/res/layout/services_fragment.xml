@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:padding="15dp"
+    android:background="#fff"
+    >
+<!--url note :"https://simplifiedcoding.net/demos/marvel/"-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/support_edittext"
+        android:textColorHint="#7c7979"
+        app:boxBackgroundColor="#007C7A7A"
+        app:helperTextTextAppearance="@style/MyAppearance"
+        app:hintTextAppearance="@style/MyAppearance">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/company_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:height="70dp"
+          android:background="#fff"
+            android:gravity="left|center"
+            android:hint="Company Name"
+            android:paddingStart="15dp"
+            android:textColorHint="#7C7979"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="13dp"
+        android:gravity="center"
+
+        android:background="@drawable/support_edittext"
+        android:layout_weight="1">
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:id="@+id/company_spinner"/>
+    </LinearLayout>
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="70dp"
+         android:orientation="horizontal"
+         android:baselineAligned="false"
+         android:layout_marginTop="10dp"
+         android:id="@+id/company_image"
+         android:background="@drawable/support_edittext">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:id="@+id/company_text_logo"
+           android:text="Logo browse"
+           android:textSize="14sp"
+           android:layout_weight="1"
+           android:layout_marginStart="8dp"
+           android:textColor="#8F8B8B"
+           android:height="70dp"
+           android:gravity="center|left"
+           android:layout_marginTop="10dp"/>
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/imagepro"
+            android:layout_gravity="center"/>
+     </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/support_edittext"
+        android:layout_marginTop="10dp"
+        android:textColorHint="#7c7979"
+        app:boxBackgroundColor="#007C7A7A"
+        app:helperTextTextAppearance="@style/MyAppearance"
+        app:hintTextAppearance="@style/MyAppearance">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="170dp"
+        android:background="#fff"
+        android:hint="Address"
+        android:paddingStart="15dp"
+        android:paddingTop="15dp"
+        android:id="@+id/company_address"
+        android:textColorHint="#7C7979"
+        android:textSize="14sp"
+        android:layout_weight="1"
+        android:gravity="left"
+        />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/support_edittext"
+        android:layout_marginTop="10dp"
+        android:textColorHint="#7c7979"
+        app:boxBackgroundColor="#007C7A7A"
+        app:helperTextTextAppearance="@style/MyAppearance"
+        app:hintTextAppearance="@style/MyAppearance">
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="70dp"
+        android:layout_marginTop="0dp"
+        android:background="#fff"
+        android:hint="Contact No."
+        android:paddingStart="15dp"
+        android:id="@+id/company_number"
+        android:textColorHint="#7C7979"
+        android:textSize="14sp"
+        android:layout_weight="1"
+        android:gravity="center|left"
+        />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/support_edittext"
+        android:layout_marginTop="10dp"
+        android:textColorHint="#7c7979"
+        app:boxBackgroundColor="#007C7A7A"
+        app:helperTextTextAppearance="@style/MyAppearance"
+        app:hintTextAppearance="@style/MyAppearance">
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="190dp"
+        android:paddingTop="15dp"
+        android:layout_marginTop="0dp"
+        android:background="#fff"
+        android:hint="About/ T and C"
+        android:paddingStart="15dp"
+        android:id="@+id/company_tandc"
+        android:textColorHint="#7C7979"
+        android:textSize="12sp"
+        android:layout_weight="1"
+        android:gravity="left"
+        />
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:id="@+id/company_document"
+        android:background="@drawable/support_edittext">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/company_text_logo2"
+            android:text="Documents browse"
+            android:layout_marginStart="9dp"
+            android:textSize="12sp"
+            android:textColorHint="#7C7979"
+
+            android:layout_weight="0.1"
+            android:height="70dp"
+            android:gravity="center|left"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/imagepro2"
+            android:text="choose document"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="E-Comm Setting"
+        android:textSize="20sp"
+        android:layout_marginTop="19dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColorHint="#7C7979"
+        />
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="35dp"
+      android:orientation="horizontal"
+      android:layout_marginTop="10dp"
+      android:baselineAligned="false">
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Enable OnApp"
+          android:tooltipText="@string/app_enable"
+          android:textSize="14sp"
+          android:id="@+id/ek_alert_dkho"
+          android:gravity="center"
+          android:layout_weight="1"/>
+      <Switch
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/check_on_off"
+          android:layout_weight="1"
+          android:gravity="center|right"
+          />
+  </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="13dp"
+        android:gravity="center"
+        android:id="@+id/hide_n_seek1"
+        android:orientation="horizontal"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/support_edittext"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bussniess category click me and select"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:gravity="center|left"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="13dp"
+        android:gravity="center"
+        android:id="@+id/hide_n_seek2"
+        android:background="@drawable/support_edittext"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Service At click me and select"
+            android:layout_marginStart="5dp"
+            android:gravity="center|left"
+            android:layout_weight="1"
+            android:textSize="14sp"/>
+            </LinearLayout>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:id="@+id/save_services"
+        android:background="@drawable/btn_round"
+        android:text="Save"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:textColor="#fff"
+        android:textSize="17sp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>
+</ScrollView>
